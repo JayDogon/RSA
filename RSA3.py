@@ -45,8 +45,6 @@ def primer(t, C):
 	
 c, ignore = primer(t,c)
 
-print("Hi")
-print("Welcome to Straya's encryption emporium v2.0!")
 print("To begin, pick two distinct primes from this list and enter them separated by a space. If you'd like bigger primes enter \"more primes\".")
 print(bprimes)
 vinp = False
@@ -81,7 +79,6 @@ while vinp is False:
             else:
                 vinp = True
                 
-print("Ok, now we're in business.")
 n = p*q
 phi = (p-1)*(q-1)
 print("Your \"n\" value is " + str(n) + " and its totient (often called phi) is " + str(phi) +  ".")
@@ -109,9 +106,7 @@ while not vinp:
             
 d = mod(phi, e)
 print("Ok, we'll just need one more number, your private key \"d\".")
-print("d is " + str(d) +  ", the unique number less than " + str(phi) + " such that the remainder when its product with e is divided by " + str(phi) + " is 1.")
-print("We've now established a valid RSA encryption system! Share e and n with your friends to allow them to encrypt messages to send to you, but make sure you keep d a secret!.")
-print("The program will now decrypt encrypted ascii sequences structured as python lists of integers e.g. \"[1, 2, 3]\". Simply copy and paste one into the console to decrypt it.")
+print("d is " + str(d))
 print("Enter \"values\" to see the values of n and e again or \"quit\" to terminate the program.")
 
 
